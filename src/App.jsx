@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Working website 🔥</h1>
-      <p>Deplying it first beacuse its a hurdel</p>
+      <p>Deployment Part Done ✅</p>
     </div>
   )
 }
