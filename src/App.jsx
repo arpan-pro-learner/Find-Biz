@@ -10,7 +10,7 @@ function App() {
       <h1>Working website 🔥</h1>
       <p>Deployment Part Done ✅</p>
       <p>Now main thing need to code 💻</p>
-      <p>need to make some more fies in github</p>
+     
     </div>
   )
 }
