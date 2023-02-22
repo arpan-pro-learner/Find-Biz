@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React, { useState } from "react";
+import Footer from "./components/Footer";
+import SearchBar from "./components/SearchBar";
+import SearchResults from "./components/SearchResults";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
 
   return (
-    <div className="App">
-      <h1>Working website 🔥</h1>
-      <p>Deployment Part Done ✅</p>
-      <p>Now main thing need to code 💻</p>
-     
+    <div>
+      <SearchBar onSearch={handleSearch} />
+      <SearchResults searchTerm={searchTerm} />
+      <Footer/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
